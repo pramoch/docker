@@ -8,7 +8,7 @@ app.use(cors())
 app.get('/', (req, res) => res.send('Hello World!'))
 
 app.get('/time', (req, res) => {
-  res.send((new Date()).toUTCString())
+  res.send((new Date()).toString())
 })
 
 app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
