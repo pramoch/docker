@@ -17,3 +17,6 @@ spec:
           image: pramoch/node
           ports:
           - containerPort: 8081
+          env:
+            - name: PORT
+              value: '8081'

@@ -6,7 +6,10 @@ const Home = () => {
   const [ time, setTime ] = useState('Time');
 
   const getTime = () => {
-    axios.get('http://localhost:8081/time')
+    // const url = 'http://localhost:5000/time';
+    const url = '/api/time';
+
+    axios.get(url)
       .then((res) => {
         console.log(res);
         setTime(res.data);
